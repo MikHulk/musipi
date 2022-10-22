@@ -1,4 +1,4 @@
-This is a simple stream selector for [mpg123](https://www.mpg123.de/) with a web interface for an rpi3.
+This is a simple stream selector for [mpg123](https://www.mpg123.de/) with a web interface for a rpi3.
 
 It's not production ready. Lakes lot of thing: authentication, ssl, etc... It was helpful on my local LAN, but definitely not something to put on the internet. (Or maybe for a kind of social experience, I don't know).
 
