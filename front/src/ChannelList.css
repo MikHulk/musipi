@@ -1,0 +1,21 @@
+#station-list {
+    display: flow-root;
+}
+.station-button {
+    border: none;
+    font-size: calc(14px + 2vmin);
+    background: none;
+    padding: 12px;
+    width: 100%;
+    outline: none;
+}
+.station-button::-moz-focus-inner {
+    border: 0;
+}
+.station-row {
+    background-color: #9CD6CC;
+    border-bottom: dotted 1px #F3F2E9;
+}
+.station-row.selected {
+    background-color: #D1E6D4;
+}

@@ -1,0 +1,19 @@
+{
+  "name": "musipi-socket",
+  "version": "1.0.0",
+  "description": "Socket to check musipi status and broadcast to clients",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./index.js"
+  },
+  "author": "mviey",
+  "license": "ISC",
+  "optionalDependencies": {
+    "bufferutil": "^4.0.1",
+    "utf-8-validate": "^5.0.2",
+    "ws": "^7.2.1"
+  },
+  "dependencies": {
+    "zeromq": "^6.0.0-beta.6"
+  }
+}

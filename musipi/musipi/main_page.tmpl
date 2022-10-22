@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+    <style>
+        .station {
+            border: 1px solid beige;
+            width: 500px;
+            font-size: 32pt;
+            margin: 9px;
+            padding: 6px 25px 5px 29px;
+            background-color: aliceblue;
+            color: darkred;
+        }
+        .stop {
+            border: 4px solid antiquewhite;
+            width: 531px;
+            font-size: 32pt;
+            margin: 7px;
+            padding: 5px 0px 9px 40px;
+            background-color: #ff9688;
+            margin-left: 0px;
+            border-radius: 10px;
+            color: cornsilk;
+        }
+        #station_list {
+            width: 574px;
+            background-color: #f4e8dc;
+            padding: 3px;
+            border-radius: 12px;
+        }
+        #info_div {
+            width: 217px;
+            background-color: blanchedalmond;
+            padding: 8px;
+            margin-left: 343px;
+            margin-bottom: 10px;
+            border: 1px solid burlywood;
+            border-radius: 12px;
+        }
+        body {
+            background-color: #FFE1C0
+        }
+        h1 {
+            color: chocolate;
+            padding-left: 74px;
+            font-size: 50pt;
+            margin-bottom: 2px
+        }
+        a {
+            text-decoration: none;
+            color: black
+        }
+    </style>
+    </head>
+    <body>
+      <h1>MusiPi</h1>
+      % if selected_station:
+      <h2>Listening: {{selected_station}}</h2>
+      % end
+      <div id=info_div>
+	% for k, v in config.items():
+        <div class=infos>{{k}}: {{v}}</div>
+        % end
+      </div>
+      <div id=station_list>
+        % for station, desc in stations.items():
+        <a href=/html/{{station}}><div class=station>{{desc['name']}}</div></a>
+        % end
+      </div>
+      <a href=/html/player_stop><div class=stop>Stop the player</div></a>
+    </body>
+</html>

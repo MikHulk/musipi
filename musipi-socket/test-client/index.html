@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>musipi-socket</title>
+    <style>
+      * {
+        font-family:tahoma;
+        font-size:23px;
+        padding:0px;
+        margin:0px;
+      }
+      h1 {
+        font-size: 30px;
+        color: #1D0000;
+      }
+      p {
+        color: #D9A0A0;
+      }
+      #container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      }
+      #status {
+        background-color: #090808;
+        border: solid 2px gray;
+        width:300px;
+        padding:5px;
+        display:block;
+        float:left;
+        margin-top:15px;
+        border-radius: 5px;
+        text-align: center;
+      }
+      .label {
+        font-weight: bold;
+        color: #AC9898;
+      }
+  </style>
+  </head>
+  <body>
+    <div id="container">
+      <h1>Musipi Status</h1>
+      <div id="status">
+        <span>Connecting...</span>
+      </div>
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
+    </script>
+    <script src="./test.js"></script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+#control {
+    display: flow-root;
+}
+
+.control-button {
+    border: none;
+    font-size: calc(14px + 2vmin);
+    background: none;
+    padding: 12px;
+    width: 100%;
+    outline: none;
+    background-color: cadetblue;
+    border-bottom: dotted white 1px;
+    color: papayawhip;
+}
+
+#stop-button {
+    color: #D0A0A0;
+}
+
+.control-button::-moz-focus-inner {
+    border: 0;
+}
+

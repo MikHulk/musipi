@@ -1,0 +1,8 @@
+{
+  "player": {
+      "url": "http://localhost:8000"
+  },
+  "status": {
+    "url": "ws://localhost:8080"
+  }
+}
